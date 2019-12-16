@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shifumi</title>
+    <link rel="stylesheet" href="shifumi.css">
+</head>
+
+<body>
+    <h2>Jeu du ShiFuMi (JavaScript || JQuery)</h2>
+    <!-- Liste déroulante -->
+    <form>
+        <select name="shifumi" size="1" id=shifumi>
+            <option value="">-- Choisissez une option --
+            <option>Pierre
+            <option>Feuille
+            <option>Ciseaux
+        </select>
+    </form>
+
+    <!-- Button -->
+    <div id=button>
+        <button class="btn btn-primary">Shifumi!</button>
+    </div>
+    <div id=rules>
+
+        <h3>Règles du jeu</h3>
+        <p>Les règles sont simples:<br>À chaque manche, vous jouez contre l'ordinateur.<br>Choisissez un élément dans la liste
+            déroulante puis cliquez sur "Shifumi !"
+
+            <br>Un point est donné à celui qui a choisi l’élément le plus fort, sachant que:
+
+            <ul>
+                <li>Ciseaux > Feuille (les ciseaux coupent la feuille)</li>
+                <li>Pierre > Ciseaux (la pierre casse les ciseaux)</li>
+                <li>Feuille > Pierre (la feuille enveloppe la pierre)</li>
+            </ul>
+        Bonne chance ! :)
+        </p>
+    </div>
+    <!-- Intégration JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="exo9.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Exercice 5</title>
+  </head>
+  <body>
+      <img src="images/image1.jpg" id="image1" />
+
+      <script type="text/javascript" language="javascript">
+        function changeImage(images){
+        document.getElementById('image1').src=images;
+        }
+        </script>
+      <a href="javascript:;" onMouseOver="changeimage('images/image1.jpg')" onMouseOut="changeimage('images/image2.jpg')"></a>
+      <!-- <a href="javascript:;" onMouseOver="changeimage('images/image2.jpg')" onMouseOut="changeimage('images/image3.jpg')"></a>
+      <a href="javascript:;" onMouseOver="changeimage('images/image3.jpg')" onMouseOut="changeimage('images/image4.jpg')"></a>  -->
+    <!-- <div class="conteneur">
+<img src="images/image1.jpg" onmouseover="javascript:this.src='images/image2.jpg';" onmouseout="javascript:this.src='images/image3.jpg';" />   
+</div> -->
+  </body>
+</html>

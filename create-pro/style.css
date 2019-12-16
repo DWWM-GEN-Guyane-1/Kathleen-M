@@ -1,0 +1,184 @@
+/* Background */
+body {
+    background-image: url("img/bg.jpg");
+}
+
+/* Élément central */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#page {
+    width: 1020px;
+    height: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+}
+
+/* Barre de navigation */
+#navbar {
+    height: 50px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+ul {
+    background-color: #000;
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    top: 0;
+    width: 1020px;
+}
+
+li {
+    float: left;
+    position: relative;
+    left: 8%;
+    padding: 8px;
+    background-color: #000;
+}
+
+li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.active {
+    color: #cfa205;
+}
+
+/* Header */
+#titre {
+    width: 1020px;
+    height: 320px;
+    background-color: #000;
+}
+
+#createpro {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 133px;
+    color: #cfa205;
+    text-align: center;
+    margin: 50px;
+    margin-top: 0px;
+    padding: 40px;
+    text-transform: uppercase;
+}
+
+#soustitre {
+    margin: 0 auto;
+    font-family: 'Bitter', serif;
+    font-size: 18px;
+    color: #cfa205;
+    text-align: center;
+    margin-top: -30px;
+    padding: 0px;
+    text-transform: uppercase;
+}
+
+/* Bloc icônes_Réseaux sociaux */
+#icones {
+    width: 1020px;
+    height: 60px;
+    background-color: #e8e8e8;
+    text-align: center;
+}
+
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 20px;
+    width: 30px;
+    text-align: center;
+    text-decoration: solid;
+    background: none;
+    color: grey;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Texte intro */
+#intro {
+    width: 900px;
+    height: 90px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Bitter', serif;
+    font-size: 18px;
+    color: #7a7a7a;
+    padding: 50px;
+    line-height: 2em;
+}
+
+/* Divider */
+#divider {
+    size: 0.5;
+    opacity: 0.2;
+    color: #e8e8e8;
+    margin-top: 30px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+/* columns */
+#three-birds {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.image {
+    margin-right: 5px;
+    margin-bottom: 20px;
+}
+
+.col-sm {
+    width: 260px;
+    height: 675px;
+    padding: 0px 0px;
+    margin-top: 10px;
+    font-family: 'Bitter', serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;   
+}
+  
+.description {
+    font-family: 'Bitter', serif;
+    font-size: 14px;
+    color: #7a7a7a;
+    flex-flow: row nowrap;
+    margin-top: 20px;
+    text-transform: initial;
+    font-weight: lighter;
+}
+
+/* Slideshow */
+.slideshow {
+    width: 350px;
+    height: 200px;
+    overflow: hidden;
+    border: 3px solid #F2F2F2;
+ }
+ 
+ .slideshow ul {
+     /* 4 images donc 4 x 100% */
+    width: 400%;
+    height: 200px;
+    padding:0; margin:0;
+    list-style: none;
+ }
+ .slideshow li {
+    float: left;
+ }
