@@ -11,7 +11,7 @@
     <div id="container">
 
         <!-- zone de connexion -->
-        <form action="verification.php" method="POST">
+        <form action="cible.php" method="POST">
             <h1>Connexion</h1>
             
             <label><b>Nom d'utilisateur</b></label>
@@ -20,7 +20,7 @@
             <label><b>Mot de passe</b></label>
             <input type="password" placeholder="Entrer le mot de passe" name="password" required>
 
-            <input type="submit" id='submit' value='LOGIN'>
+            <input type="submit" id='submit' value='SIGN IN'>
 
             <?php
             if(isset($_GET['erreur'])){
