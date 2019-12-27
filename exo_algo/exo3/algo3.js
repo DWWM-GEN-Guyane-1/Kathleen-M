@@ -1,6 +1,6 @@
 $(document).ready(function () {
     var N = 0;
-    var i = 0;
+    var i = 10;
     console.log(N);
     console.log(i);
 
@@ -12,13 +12,15 @@ $(document).ready(function () {
 
     // i ← 0 À traduire !!!
 
-    function lireNombreEntierN() {
-        N = Number(window.alert("Les 10 nombres suivants sont : "));
-        while (i < 10)
-            i++;
-        i += N;
-    }
+    while (N > 0){
+        n+i
+        lireNombreEntierN()}
+    // function lireNombreEntierN() {
+    //     i = Number(window.alert("Les 10 nombres suivants sont : "));
+    //     while (i < 10)
+    //         i++;
+    //     i += N;
+    // }
 
-    lireNombreEntierN();
-
+    // lireNombreEntierN();
 });
