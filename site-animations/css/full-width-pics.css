@@ -2,6 +2,7 @@ body {
   padding-top: 56px;
 }
 
+/* Background header + sections */
 .bg-image-full {
   background: no-repeat center center scroll;
   -webkit-background-size: cover;
@@ -15,7 +16,7 @@ body {
   height: 16.5em;
 }
 
-/*Animation CSS*/
+/*Animation CSS logo header*/
 flip-box {
   background-color: transparent;
   width: 300px;
