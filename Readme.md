@@ -45,6 +45,7 @@
 
 [Lien vers le repo - programmation d'un shifumi](https://dwwm-gen-guyane-1.github.io/kathleen-m/exo_chifoumi/)
 
+[Lien vers le repo - programmation d'une todolist](https://dwwm-gen-guyane-1.github.io/kathleen-m/todolist/)
 
 -- Programmation en groupe --
 
