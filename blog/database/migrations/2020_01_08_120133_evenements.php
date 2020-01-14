@@ -15,9 +15,9 @@ class Evenements extends Migration
     {
         Schema::create('evenements', function(Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name');
-            $table->lineString('positions');
-            $table->date('created_at');
+            $table->string('nom');
+            $table->string('lieu');
+            $table->date('date');
             $table->mediumText('description');
         });
     }

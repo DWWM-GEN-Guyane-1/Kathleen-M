@@ -12,9 +12,9 @@ class EvenementsTableSeeder extends Seeder
     public function run()
     {
         DB::table('evenements')->insert([
-            'name'=>'Sokana',
-            'positions' =>'Cayenne',
-            'created_at' =>'2020-01-01' ,
+            'nom'=>'Sokana',
+            'lieu' =>'Cayenne',
+            'date' =>'2020-01-01' ,
             'description' =>'description',
         ]);
     }

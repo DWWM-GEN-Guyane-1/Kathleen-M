@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Evenement;
 
 class EvenementController extends Controller
 {
@@ -23,7 +24,9 @@ class EvenementController extends Controller
      */
     public function create()
     {
-        echo 'tata';
+
+   return view('create');
+   
     }
 
     /**
@@ -34,7 +37,15 @@ class EvenementController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validatedData = $request->validate([
+            'nom_evenement' => 'required|max:255',
+            'lieu' => 'required|max:255',
+            'date' => 'required|numeric',
+            'description' => 'required|max:255',
+        ]);
+        $show = Evenement::create($validatedData);
+   
+        return redirect('/books')->with('success', 'Votre événement a bien été enregistré.');
     }
 
     /**

@@ -8,6 +8,7 @@ class Evenement extends Model
 {
     public function participants() 
     { 
-        return $this->belongsTo(Participant::class); 
+        return $this->belongsTo(Participant::class);
+        // protected $fillable = ['nom', 'lieu', 'date', 'description']; 
     }
 }
