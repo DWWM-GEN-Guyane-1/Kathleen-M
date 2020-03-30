@@ -1,0 +1,16 @@
+* {
+border: solid red 1px;
+}
+
+#rules {
+    /* haut - droite - bas - gauche */
+    margin : 5rem 20rem 5rem 20rem;
+    text-align: center;
+}
+
+
+.peax-element {
+    width : 350px;
+    height : 350px;
+    margin-bottom: 2rem;
+}
