@@ -1,7 +1,9 @@
 var toi; //Nominate player 1
 var bot; // Nominate player 2
-var pierrepPapierCiseaux = ["pierre", "papier", "ciseaux"]; //initialize array (game choice)
-var choixBot = pierrepPapierCiseaux[Math.floor(Math.random() * pierrepPapierCiseaux.length)]; //"Bot" Random game choice
+
+var pierrePapierCiseaux = ["pierre", "papier", "ciseaux"]; //initialize array (game choice)
+var choixBot = pierrePapierCiseaux[Math.floor(Math.random() * pierrePapierCiseaux.length)]; //"Bot" Random game choice
+var choixToi = pierrePapierCiseaux;
 
 function newGame() {
     if (choixBot == "pierre" && choixToi == "pierre") {
