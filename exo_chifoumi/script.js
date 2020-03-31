@@ -14,6 +14,7 @@ var pierrepPapierCiseaux = ["pierre", "papier", "ciseaux"]; //Nominate button ga
   alert("tata");
 }
 
+    };
 
 //     if choixVous == choixBot alors = 0
 
