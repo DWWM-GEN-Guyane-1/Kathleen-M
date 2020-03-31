@@ -8,13 +8,12 @@ var pierrepPapierCiseaux = ["pierre", "papier", "ciseaux"]; //Nominate button ga
 
        var choixToi = document.getElementById("toiChoice").value; //"Toi" made a choice
        choixToi.onclick = showAlert;
+    };
 
        function showAlert()
 {
   alert("tata");
 }
-
-    };
 
 //     if choixVous == choixBot alors = 0
 
