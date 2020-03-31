@@ -1,26 +1,19 @@
-var vous;
-var bot;
+var toi; //Nominate player 1
+var bot; // Nominate player 2
 
-var pierrepPapierCiseaux = ["pierre", "papier", "ciseaux"];
+var pierrepPapierCiseaux = ["pierre", "papier", "ciseaux"]; //Nominate button game value
     var choixBot = pierrepPapierCiseaux[Math.floor(Math.random() * pierrepPapierCiseaux.length)];//"Bot" Random choice
 
     function newGame() {
-       document.getElementById ("pierrePapierCiseaux").addEventListener("vousChoice",newGame);
-       var choixVous = document.getElementById("vousChoice").value; //"Vous" made a choice
 
-       document.getElementById("vousChoice").value = ""; //Take value button
-       choixVous.onclick = choixBot; //Collect Bot choice
+       var choixToi = document.getElementById("toiChoice").value; //"Toi" made a choice
+       choixToi.onclick = showAlert;
 
+       function showAlert()
+{
+  alert("tata");
+}
 
-
-//        choixVous.onclick = showAlert;
-//     };
 
 //     if choixVous == choixBot alors = 0
 
-//     function showAlert()
-// {
-//   alert("Match nul");
-// }
-
-// if choixVous ==
