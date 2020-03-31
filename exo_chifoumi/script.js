@@ -7,10 +7,23 @@ function newGame() {
     if (choixBot == "pierre" && toi == "pierre") {
         return "Match nul"
     } else if (choixBot == "pierre" && input == "papier") {
+        return "Tu as gagné !"
+    } else if (choixBot == "pierre" && input == "ciseaux") {
+        return "Tu as perdu ! "
+    } else if (choixBot == "papier" && toi == "pierre") {
+        return "Tu as gagné !"
+    } else if (choixBot == "papier" && input == "papier") {
+        return "Match nul"
+    } else if (choixBot == "papier" && input == "ciseaux") {
+        return "Tu as perdu ! "
+    } else if (choixBot == "ciseaux" && toi == "pierre") {
         return "Tu as perdu !"
-    } else {
-        return "Tu as gagné ! "
-    }
+    } else if (choixBot == "ciseaux" && input == "papier") {
+        return "Tu as gagné !"
+    } else if (choixBot == "ciseaux" && input == "ciseaux") {
+        return "Match nul"
+    } else
+        return "Rejouer ?"
 };
 
 
