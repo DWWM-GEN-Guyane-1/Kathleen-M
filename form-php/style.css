@@ -1,0 +1,40 @@
+/* Bases (p, body, h1, h2 etc...) */
+#bodyformindex {
+
+    background-color : #000000;
+}
+
+#bodycome {
+
+    background-color: #fed001;
+}
+/* Layout (l-header, l-sidebar, l-footer etc...) */
+/* Module (widget, list, btn, bloc, title, form etc...) */
+
+#jumboups {
+
+    margin : 10em;
+    padding : 2.75em;
+    width : 50%;
+
+}
+
+#jumboform {
+
+    margin : 2em;
+    padding : 1.5em;
+    width : 50%;
+
+}
+
+#jumbocome {
+
+    margin : 20em;
+    margin-top:15em;
+    padding : 1.5em;
+    width : 50%;
+    opacity: 0.5;
+
+}
+
+/* Thème (dark theme, light theme etc...) */
