@@ -3,7 +3,7 @@ Javascript Functions w/o counter:
 Step 1 : Initialize players "Bot" & "Toi" |OK|
 Step 2 :  button game choice |OK|
 Step 3 : Game choice bot = random of Pierre (1) Papier (2) Ciseaux (3) [pierrePapierCiseaux] |OK|
-Step 4 : Game choice toi = Onclick.adEventListener of Button value "pierre" "papier" "ciseaux"
+Step 4 : Game choice toi = Onclick.adEventListener of Button value "pierre" "papier" "ciseaux" |OK|
 Step 5 : Compare choice Toi vs choice Bot (in the order)
  - if button "Pierre" = 1 -> show alert "Match nul" + button "Rejouer"
  - if button "Pierre" = 2 -> show alert "Tu as perdu !" + button "Rejouer"
