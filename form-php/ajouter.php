@@ -1,18 +1,33 @@
-<!-- Ce fichier permet d’ajouter les données soumises via le formulaire, dans la base de données. -->
 <?php
-// Permet d'inclure le fichier, d'accéder à son contenu et de le récupérer.
-include("register.php");
+//Connexion à la bdd
+            $servname = 'localhost';
+            $dbname = 'form-php';
+            $user = 'root';
+            $pass = 'S1mpl0n973!';
 
-if ($POST['nom'] != '' AND $POST['prenom'] != '' AND $POST['age'] != '')
-{
-register();
-$sql = "INSERT INTO form-php(id,nom,prenom,age) ";
-$sql .= "VALUES('','".$_POST['nom']."','".$_POST['prenom']."','".$_POST['age']."')";
-    
-mysql_query($sql) or die(mysql_error());
-}
-// else
-// {
-//     echo 'Attention ! Vous devez remplir tous les champs !';
-// }
-?>
+            $username = $_POST["username"];
+            $password = $_POST["password"];
+            
+            try{
+                $dbco = new PDO("mysql:host=$servname;dbname=form-php", $user, $pass);
+                $dbco->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+                //Insérer les données reçues via le formulaire
+                $sql = $dbco->prepare("
+                INSERT INTO form_user(username,password)
+                        VALUES(:username, :password)");
+                
+                $sql->bindParam(':username',$username);
+                $sql->bindparam(':password',$password);
+                $sql->execute();
+
+                //On renvoie l'utilisateur vers la page de remerciement
+        header("Location:form-validation.php");
+
+                $query = mysql_query("select * from form_user", $connection);//select data from database
+            }
+
+            catch(PDOException $e){
+                echo "Erreur : " . $e->getMessage();
+              }
+          ?>
+

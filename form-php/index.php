@@ -16,51 +16,35 @@
 </head>
 
 <body id="bodyformindex">
-<?php
-                       $servername = 'localhost';
-                       $username = 'root';
-                       $password = 'S1mpl0n973!';
-                       
-                       //On essaie de se connecter
-                       try{
-                           $conn = new PDO("mysql:host=$servername;dbname=form-php", $username, $password);
-                           //On définit le mode d'erreur de PDO sur Exception
-                           $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-                           
-                           $sql = "CREATE TABLE form_user(
-                            Id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-                            username VARCHAR(30) NOT NULL,
-                            password VARCHAR(30) NOT NULL,
-                            UNIQUE(username))";
-                    
-                    $dbco->exec($sql);
-                    echo 'Table bien créée !';
-                }
-                       
-                       /*On capture les exceptions si une exception est lancée et on affiche
-                        *les informations relatives à celle-ci*/
-                       catch(PDOException $e){
-                         echo "Erreur : " . $e->getMessage();
-                       }
-
-                       //On ferme la connexion
-                       $conn = null;
-        ?>
-
 <div class="container d-flex justify-content-center">
-    <div id="jumboups" class="jumbotron">
-    <h1 class="display-4 text-center">Oups...</h1> 
-    <p class="lead text-center">Interdit aux - 18 ans</p>
-    <div class="row justify-content-center">
-            <div id="two-pimples" class="col-4 col-sm-4 col-lg-3">
-                        <a href="register.php" class="btn btn-dark txt-white">Inscription</a>
-            </div>
-            <div id="two-pimples" class="col-4 col-sm-4 col-lg-3">
-                        <a href="login.php" class="btn btn-dark txt-white">Connexion</a>
-            </div>       
-                </div>
-        </div>
-        </div>
+    <div id="jumboform" class="jumbotron">
+    <h1 class="display-4 text-center">Dernière étape !</h1> 
+    <p class="lead text-center">Tu es sûr.e de vouloir t'inscrire ?</p>
+    
+    <form name="formulaire" method="post" action="ajouter.php">
+
+  <div class="form-group">
+    <label for="input">Pseudonyme</label>
+    <input name="username" type="username" type="text" class="form-control" id="username" placeholder="Votre pseudonyme" required> 
+  </div>
+ 
+  <div class="form-group">
+    <label for="input">Mot de passe</label>
+    <input name="password" type="password" class="form-control" id="password" placeholder="Votre mot de passe" required>
+  </div>
+
+  <div class="form-group">
+    <label for="input">Répétez votre mot de passe</label>
+    <input name="repeatpassword" type="password" class="form-control" id="password" placeholder="Répétez votre mot de passe" required>
+  </div>
+ <div class="row justify-content-center">
+  <button type="submit" class="btn btn-dark txt-white btn-lg">Inscription</button>
+</div>
+</form>
+</div>
+</div>
+
+    </form>
 </body>
 
 </html>
