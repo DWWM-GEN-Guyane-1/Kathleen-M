@@ -27,11 +27,11 @@
                            //On définit le mode d'erreur de PDO sur Exception
                            $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
                            
-                           $sql = "CREATE TABLE Clients(
+                           $sql = "CREATE TABLE form_user(
                             Id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-                            Username VARCHAR(30) NOT NULL,
-                            Password VARCHAR(30) NOT NULL,
-                            UNIQUE(Username))";
+                            username VARCHAR(30) NOT NULL,
+                            password VARCHAR(30) NOT NULL,
+                            UNIQUE(username))";
                     
                     $dbco->exec($sql);
                     echo 'Table bien créée !';
