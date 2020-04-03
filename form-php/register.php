@@ -44,10 +44,10 @@ if(isset($_POST['submit']))
     <input name="username" type="username" type="text" class="form-control" id="username" placeholder="Votre pseudonyme" required> 
   </div>
 
-  <div class="form-group">
+  <!-- <div class="form-group">
     <label for="input">Date de naissance</label>
     <input name="date" type="date" class="form-control" id="date" required> 
-  </div>
+  </div> -->
  
   <div class="form-group">
     <label for="input">Mot de passe</label>

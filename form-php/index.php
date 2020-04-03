@@ -16,7 +16,6 @@
 </head>
 
 <body id="bodyformindex">
-
 <?php
                        $servername = 'localhost';
                        $username = 'root';
@@ -30,13 +29,9 @@
                            
                            $sql = "CREATE TABLE Clients(
                             Id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-                            Pseudonyme VARCHAR(30) NOT NULL,
-                            Mail VARCHAR(50) NOT NULL,
-                            DateNaissance DATE(8) NOT NULL,
-                            MotDePasse VARCHAR(30) NOT NULL,
-                            UNIQUE(Pseudonyme))
-                            UNIQUE(MotDePasse))
-                            UNIQUE(Mail))";
+                            Username VARCHAR(30) NOT NULL,
+                            Password VARCHAR(30) NOT NULL,
+                            UNIQUE(Username))";
                     
                     $dbco->exec($sql);
                     echo 'Table bien créée !';
