@@ -13,3 +13,7 @@ Langages utilisés :
 Outils utilisés : 
 - MySQL Workbench : serveur de base de données qui interprète et exécute les requêtes soumises grâce au langage SQL. 
 - Bootstrap : framework qui permet de structurer les pages
+
+Base de donnée : 
+- Serveur de base de données : MySQL Workbench
+- Nom : form-phph
