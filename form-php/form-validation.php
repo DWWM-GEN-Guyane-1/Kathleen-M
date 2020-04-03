@@ -18,16 +18,8 @@
 <body id="bodyformindex">
 <div class="container d-flex justify-content-center">
     <div id="jumboups" class="jumbotron">
-    <h1 class="display-4 text-center">Super...</h1> 
-    <p class="lead text-center">Validé !</p>
-    <div class="row justify-content-center">
-            <div id="two-pimples" class="col-4 col-sm-4 col-lg-3">
-                        <a href="register.php" class="btn btn-dark txt-white">Inscription</a>
-            </div>
-            <div id="two-pimples" class="col-4 col-sm-4 col-lg-3">
-                        <a href="login.php" class="btn btn-dark txt-white">Connexion</a>
-            </div>       
-                </div>
+    <h1 class="display-4 text-center">Super !</h1> 
+    <p class="lead text-center">Vos données ont bien été enregistrées.</p>
         </div>
         </div>
 </body>
